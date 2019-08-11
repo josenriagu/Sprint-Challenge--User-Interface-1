@@ -160,12 +160,18 @@ img {
   max-width: 100%;
 }
 
+img:hover {
+  transition: transform 1s;
+  transform: scale(1.1);
+}
+
 button {
   margin-top: 20px;
   padding: 5px 15px;
   border-radius: 5px;
   border: 1px solid black;
   background: transparent;
+  cursor: pointer;
 }
 
 .container {
@@ -292,4 +298,16 @@ footer nav {
 footer nav a {
   color: white;
   text-decoration: none;
+}
+
+@keyframes imanimation {
+  20% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: skew(45deg);
+  }
 }
